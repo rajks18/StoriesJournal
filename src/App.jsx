@@ -5,18 +5,31 @@ import "./App.css";
 import StoriesHeader from "./components/Header";
 import HeroSlider from "./components/HeroSlider";
 import FeaturedPosts from "./components/FeaturedPosts";
+import Footer from "./components/Footer";
+import StoriesBlog from "./components/All";
+import TravelTips from "./components/TravelTips";
+import LatestPosts from "./components/LatestPosts";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="max-w-7xl mx-auto px-4 lg:px-8">
+    <div className=" space-y-8">
       <StoriesHeader  />
 
       <HeroSlider  />
 
       <FeaturedPosts  />
+
+      <TravelTips/>
+      
+      <LatestPosts/>
+
+      <Footer/>
     </div>
+    // <div>
+    //    <StoriesBlog/>
+    //  </div>
   );
 }
 
