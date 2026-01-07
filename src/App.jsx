@@ -9,23 +9,25 @@ import Footer from "./components/Footer";
 import StoriesBlog from "./components/All";
 import TravelTips from "./components/TravelTips";
 import LatestPosts from "./components/LatestPosts";
+import CategoryPosts from "./components/CategoryPosts";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <div className=" space-y-8">
-      <StoriesHeader  />
+      <StoriesHeader />
 
-      <HeroSlider  />
+      <HeroSlider />
 
-      <FeaturedPosts  />
+      <FeaturedPosts />
 
-      <TravelTips/>
+      <TravelTips />
+
+      <LatestPosts />
       
-      <LatestPosts/>
-
-      <Footer/>
+      <CategoryPosts />
+      <Footer />
     </div>
     // <div>
     //    <StoriesBlog/>
