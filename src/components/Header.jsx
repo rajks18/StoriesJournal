@@ -19,7 +19,7 @@ export default function StoriesHeader() {
   ];
 
   return (
-    <header className="bg-white border-b border-gray-200 max-w-7xl mx-auto px-6">
+    <header className="bg-white border-b border-gray-200">
       {/* Top Bar */}
       <div className="px-4 lg:px-6 py-4 flex items-center justify-between">
         {/* Logo */}

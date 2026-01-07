@@ -10,12 +10,12 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div>
-      <StoriesHeader />
-      <div className="max-w-7xl mx-auto px-4 lg:px-8">
-        <HeroSlider />
-      </div>
-      <FeaturedPosts className="max-w-7xl mx-auto px-4 lg:px-8"/>
+    <div className="max-w-7xl mx-auto px-4 lg:px-8">
+      <StoriesHeader  />
+
+      <HeroSlider  />
+
+      <FeaturedPosts  />
     </div>
   );
 }
