@@ -75,17 +75,17 @@ export default function LatestPosts() {
   ];
 
   return (
-    <div className="w-full max-w-7xl mx-auto px-6 lg:px-8 py-8">
+    <div className="w-full max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 py-8">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         {/* Latest Posts */}
         <div className="lg:col-span-2">
-          <h2 className="text-sm font-semibold text-muted-foreground tracking-wider mb-6">LATEST POSTS</h2>
+          <h2 className="text-sm font-semibold text-gray-500 tracking-wider mb-6">LATEST POSTS</h2>
           
           <div className="space-y-6">
             {posts.map((post, index) => (
-              <article key={index} className="flex gap-5 group cursor-pointer">
+              <article key={index} className="flex gap-2 sm:gap-3 md:gap-5 group cursor-pointer">
                 {/* Image */}
-                <div className="w-40 h-28 rounded-xl overflow-hidden flex-shrink-0">
+                <div className="w-20 h-16 sm:w-24 sm:h-20 md:w-40 md:h-28 rounded-xl overflow-hidden shrink-0">
                   <img
                     src={post.image}
                     alt={post.title}
@@ -94,31 +94,31 @@ export default function LatestPosts() {
                 </div>
 
                 {/* Content */}
-                <div className="flex-1">
+                <div className="flex-1 min-w-0">
                   {/* Category */}
                   <div className="flex items-center gap-2 mb-1">
                     <span className={`text-xs font-semibold ${post.category.color}`}>
                       {post.category.name}
                     </span>
-                    <span className="text-muted-foreground">•</span>
+                    <span className="text-gray-400">•</span>
                   </div>
 
                   {/* Title */}
-                  <h3 className="text-base font-bold text-foreground mb-2 group-hover:text-primary transition-colors flex items-center gap-2">
-                    {post.title}
-                    {post.featured && <Star className="w-4 h-4 text-muted-foreground" />}
+                  <h3 className="text-xs sm:text-sm md:text-base font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors flex items-start gap-2 line-clamp-2">
+                    <span className="flex-1">{post.title}</span>
+                    {post.featured && <Star className="w-3 h-3 sm:w-4 sm:h-4 text-gray-400 shrink-0 mt-0.5" />}
                   </h3>
 
                   {/* Meta */}
-                  <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                    <span>{post.date}</span>
-                    <span>•</span>
-                    <span className="flex items-center gap-1">
+                  <div className="flex items-center gap-1.5 sm:gap-2 text-[10px] sm:text-xs text-gray-500 flex-wrap">
+                    <span className="shrink-0">{post.date}</span>
+                    <span className="hidden sm:inline">•</span>
+                    <span className="hidden sm:flex items-center gap-1 shrink-0">
                       <Clock className="w-3 h-3" />
                       {post.readTime}
                     </span>
-                    <span>•</span>
-                    <span className="flex items-center gap-1">
+                    <span className="hidden md:inline">•</span>
+                    <span className="hidden md:flex items-center gap-1 shrink-0">
                       <Eye className="w-3 h-3" />
                       {post.views}
                     </span>
@@ -129,13 +129,13 @@ export default function LatestPosts() {
           </div>
 
           {/* Pagination */}
-          <div className="flex items-center gap-2 mt-8">
+          <div className="flex items-center gap-2 mt-8 justify-center sm:justify-start">
             <button
               onClick={() => setCurrentPage(Math.max(1, currentPage - 1))}
-              className="w-8 h-8 flex items-center justify-center bg-muted hover:bg-muted/80 rounded-full transition-colors"
+              className="w-8 h-8 flex items-center justify-center bg-gray-100 hover:bg-gray-200 rounded-full transition-colors"
               aria-label="Previous page"
             >
-              <ChevronLeft className="w-4 h-4 text-muted-foreground" />
+              <ChevronLeft className="w-4 h-4 text-gray-600" />
             </button>
             
             {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
@@ -145,7 +145,7 @@ export default function LatestPosts() {
                 className={`w-8 h-8 flex items-center justify-center rounded-full text-sm font-medium transition-colors ${
                   currentPage === page
                     ? 'bg-cyan-500 text-white'
-                    : 'text-muted-foreground hover:bg-muted'
+                    : 'text-gray-600 hover:bg-gray-100'
                 }`}
               >
                 {page.toString().padStart(2, '0')}
@@ -154,10 +154,10 @@ export default function LatestPosts() {
 
             <button
               onClick={() => setCurrentPage(Math.min(totalPages, currentPage + 1))}
-              className="w-8 h-8 flex items-center justify-center bg-muted hover:bg-muted/80 rounded-full transition-colors"
+              className="w-8 h-8 flex items-center justify-center bg-gray-100 hover:bg-gray-200 rounded-full transition-colors"
               aria-label="Next page"
             >
-              <ChevronRight className="w-4 h-4 text-muted-foreground" />
+              <ChevronRight className="w-4 h-4 text-gray-600" />
             </button>
           </div>
         </div>
@@ -166,7 +166,7 @@ export default function LatestPosts() {
         <aside className="space-y-8">
           {/* Last Comments */}
           <div>
-            <h4 className="text-sm font-semibold text-muted-foreground tracking-wider mb-4">LAST COMMENTS</h4>
+            <h4 className="text-sm font-semibold text-gray-500 tracking-wider mb-4">LAST COMMENTS</h4>
             <div className="space-y-5">
               {comments.map((comment, index) => (
                 <div key={index} className="flex gap-3">
@@ -177,12 +177,12 @@ export default function LatestPosts() {
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <div className="flex-1">
-                    <div className="flex items-center gap-2 mb-1">
-                      <span className="text-sm font-semibold text-foreground">{comment.name}</span>
-                      <span className="text-xs text-muted-foreground">• {comment.date}</span>
+                  <div className="flex-1 min-w-0">
+                    <div className="flex items-center gap-2 mb-1 flex-wrap">
+                      <span className="text-sm font-semibold text-gray-900">{comment.name}</span>
+                      <span className="text-xs text-gray-500">• {comment.date}</span>
                     </div>
-                    <p className="text-sm text-muted-foreground line-clamp-2">{comment.text}</p>
+                    <p className="text-sm text-gray-600 line-clamp-2">{comment.text}</p>
                   </div>
                 </div>
               ))}
@@ -191,7 +191,7 @@ export default function LatestPosts() {
 
           {/* Instagram */}
           <div>
-            <h4 className="text-sm font-semibold text-muted-foreground tracking-wider mb-4">INSTAGRAM</h4>
+            <h4 className="text-sm font-semibold text-gray-500 tracking-wider mb-4">INSTAGRAM</h4>
             <div className="grid grid-cols-3 gap-2">
               {instagramImages.map((image, index) => (
                 <a

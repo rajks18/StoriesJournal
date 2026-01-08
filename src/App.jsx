@@ -15,7 +15,7 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="space-y-8">
+    <div className="container mx-auto space-y-8">
       <StoriesHeader className="mx-auto" />
 
       <HeroSlider />

@@ -75,7 +75,7 @@ export default function FeaturedPosts() {
       <div className="flex items-center justify-between mb-8">
         <div>
           <h2 className="text-2xl font-bold mb-2">FEATURED POSTS</h2>
-          <div className="flex items-center gap-4 text-sm text-gray-600">
+          <div className="hidden md:flex items-center gap-4 text-sm text-gray-600">
             <span className="flex items-center gap-1">
               <span>❤️</span> Hot tags:
             </span>
