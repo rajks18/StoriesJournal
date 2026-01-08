@@ -15,7 +15,8 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="container mx-auto space-y-8">
+    <div>
+      <div className="container mx-auto space-y-8">
       <StoriesHeader className="mx-auto" />
 
       <HeroSlider />
@@ -27,8 +28,10 @@ function App() {
       <LatestPosts />
 
       <CategoryPosts />
-      <Footer />
     </div>
+    <Footer />
+    </div>
+    
     // <div>
     //    <StoriesBlog/>
     //  </div>
