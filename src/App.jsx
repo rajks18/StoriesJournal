@@ -6,7 +6,6 @@ import StoriesHeader from "./components/Header";
 import HeroSlider from "./components/HeroSlider";
 import FeaturedPosts from "./components/FeaturedPosts";
 import Footer from "./components/Footer";
-import StoriesBlog from "./components/All";
 import TravelTips from "./components/TravelTips";
 import LatestPosts from "./components/LatestPosts";
 import CategoryPosts from "./components/CategoryPosts";

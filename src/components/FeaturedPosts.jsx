@@ -109,7 +109,7 @@ export default function FeaturedPosts() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Main Featured Post */}
         {mainPost && (
-          <div className="relative group cursor-pointer rounded-2xl overflow-hidden h-[400px]">
+          <div className="relative group cursor-pointer rounded-xl overflow-hidden h-[400px] transition-shadow duration-300 hover:shadow-2xl shadow-neutral-600">
             <img
               src={mainPost.image}
               alt={mainPost.title}
@@ -164,7 +164,7 @@ export default function FeaturedPosts() {
           {gridPosts.map((post, index) => (
             <div
               key={index}
-              className="relative group cursor-pointer rounded-2xl overflow-hidden h-[190px]"
+              className="relative group cursor-pointer rounded-2xl overflow-hidden h-[190px] transition-shadow duration-300 hover:shadow-lg shadow-neutral-500"
             >
               <img
                 src={post.image}
