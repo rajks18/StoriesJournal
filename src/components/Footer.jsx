@@ -77,7 +77,7 @@ export default function Footer() {
               QUICK LINK
               <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-gray-900"></span>
             </h3>
-            <ul className="space-y-3">
+            <ul className="space-y-4">
               {quickLinks.map((link, index) => (
                 <li key={index}>
                   <a
