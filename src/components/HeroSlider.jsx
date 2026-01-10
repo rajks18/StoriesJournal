@@ -52,7 +52,7 @@ export default function HeroSlider() {
     <div className="w-full max-w-7xl mx-auto px-6 lg:px-8">
       <div className="relative w-full h-screen max-h-150 overflow-hidden rounded-2xl">
         {slides.map((slide, index) => (
-          <div key={index} className={`absolute inset-1 transition-opacity duration-700 ${index === currentSlide ? "opacity-100" : "opacity-0"}`}>
+          <div key={index} className={`absolute inset-0 transition-opacity duration-700 ${index === currentSlide ? "opacity-100" : "opacity-0"}`}>
             {/* Background Image with Overlay */}
             <div className="relative w-full h-full">
               <img src={slide.image} alt={slide.title} className="w-full h-full object-cover" />
