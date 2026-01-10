@@ -36,7 +36,7 @@ export default function HeroSlider() {
   };
 
   const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 2 + slides.length) % slides.length);
+    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
   };
 
   // Auto-play functionality
