@@ -32,7 +32,7 @@ export default function HeroSlider() {
   ];
 
   const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % slides.length);
+    setCurrentSlide((prev) => (prev + 2) % slides.length);
   };
 
   const prevSlide = () => {
