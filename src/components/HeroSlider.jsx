@@ -49,7 +49,7 @@ export default function HeroSlider() {
   }, [currentSlide]);
 
   return (
-    <div className="w-full max-w-7xl mx-auto px-6 lg:px-8">
+    <div className="w-full max-w-7xl mx-auto px-6 lg:px-9">
       <div className="relative w-full h-screen max-h-150 overflow-hidden rounded-2xl">
         {slides.map((slide, index) => (
           <div key={index} className={`absolute inset-0 transition-opacity duration-700 ${index === currentSlide ? "opacity-100" : "opacity-0"}`}>
