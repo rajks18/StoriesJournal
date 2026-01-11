@@ -97,7 +97,7 @@ export default function FeaturedPosts() {
           </button>
           <button
             onClick={nextPage}
-            className="w-10 h-10 flex items-center justify-center bg-gray-100 hover:bg-gray-200 rounded-full transition-all duration-300"
+            className="w-10 h-10 flex items-center justify-center bg-gray-800 hover:bg-gray-200 rounded-full transition-all duration-300"
             aria-label="Next page"
           >
             <ChevronRight className="w-5 h-5 text-gray-700" />
