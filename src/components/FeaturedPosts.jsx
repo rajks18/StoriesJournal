@@ -125,7 +125,7 @@ export default function FeaturedPosts() {
             {/* Content */}
             <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
               {/* Categories */}
-              <div className="flex items-center gap-2 mb-8">
+              <div className="flex items-center gap-2 mb-10">
                 {mainPost.categories.map((category, idx) => (
                   <span key={idx}>
                     <span className={`text-xs font-semibold tracking-wider ${mainPost.categoryColors[idx]}`}>
