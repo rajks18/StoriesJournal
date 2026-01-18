@@ -106,7 +106,7 @@ export default function FeaturedPosts() {
       </div>
 
       {/* Posts Grid */}
-      <div className="grid grid-cols-2 lg:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Main Featured Post */}
         {mainPost && (
           <div className="relative group cursor-pointer rounded-xl overflow-hidden h-100 transition-shadow duration-300 hover:shadow-2xl shadow-neutral-600">
