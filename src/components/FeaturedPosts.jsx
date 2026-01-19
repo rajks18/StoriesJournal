@@ -118,7 +118,7 @@ export default function FeaturedPosts() {
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
             
             {/* Icon Badge */}
-            <div className={`absolute top-4 left-4 w-10 h-16 ${mainPost.iconColor} rounded-full flex items-center justify-center text-white text-xl shadow-lg`}>
+            <div className={`absolute top-4 left-4 w-10 h-18 ${mainPost.iconColor} rounded-full flex items-center justify-center text-white text-xl shadow-lg`}>
               {mainPost.icon}
             </div>
 
