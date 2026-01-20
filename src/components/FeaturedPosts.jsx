@@ -123,7 +123,7 @@ export default function FeaturedPosts() {
             </div>
 
             {/* Content */}
-            <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+            <div className="absolute bottom-1 left-0 right-0 p-6 text-white">
               {/* Categories */}
               <div className="flex items-center gap-2 mb-3">
                 {mainPost.categories.map((category, idx) => (
