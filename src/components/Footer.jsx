@@ -92,7 +92,7 @@ export default function Footer() {
           </div>
 
           {/* Tag Cloud Section */}
-          <div className="space-y-6">
+          <div className="space-y-7">
             <h3 className="text-lg font-bold text-gray-900 uppercase tracking-wide relative inline-block">
               TAGCLOUD
               <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-gray-900"></span>
