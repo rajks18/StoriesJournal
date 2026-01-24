@@ -102,7 +102,7 @@ export default function Footer() {
                 <a
                   key={index}
                   href="#"
-                  className="px-4 py-10 bg-white border border-gray-300 rounded-full text-sm text-gray-700 hover:border-cyan-500 hover:text-cyan-500 transition-all duration-300"
+                  className="px-4 py-11 bg-white border border-gray-300 rounded-full text-sm text-gray-700 hover:border-cyan-500 hover:text-cyan-500 transition-all duration-300"
                 >
                   {tag}
                 </a>
