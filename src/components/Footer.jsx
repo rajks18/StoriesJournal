@@ -97,7 +97,7 @@ export default function Footer() {
               TAGCLOUD
               <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-gray-900"></span>
             </h3>
-            <div className="flex flex-wrap gap-16">
+            <div className="flex flex-wrap gap-17">
               {tags.map((tag, index) => (
                 <a
                   key={index}
