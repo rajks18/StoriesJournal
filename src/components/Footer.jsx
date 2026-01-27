@@ -95,7 +95,7 @@ export default function Footer() {
           <div className="space-y-6">
             <h3 className="text-lg font-bold text-gray-900 uppercase tracking-wide relative inline-block">
               TAGCLOUD
-              <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-gray-900"></span>
+              <span className="absolute bottom-0 left-0 w-12 h-0.6 bg-gray-900"></span>
             </h3>
             <div className="flex flex-wrap gap-2">
               {tags.map((tag, index) => (
